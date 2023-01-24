@@ -6,7 +6,7 @@ import plotly.express as px
 st.set_page_config(page_title='Live Income Dashboard',
 page_icon='💸',layout='wide')
 st.title('Live Income Data Monitoring App')
-df=p.read_csv('F:/FF/py/csv/income.csv')
+df=p.read_csv('income.csv')
 #filters
 jobfilter=st.selectbox('Choose a job',df['occupation'].unique(),index=3)
 st.write(jobfilter)
