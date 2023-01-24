@@ -8,7 +8,7 @@ page_icon='💸',layout='wide')
 st.title('Live Income Data Monitoring App')
 df=p.read_csv('income.csv')
 #filters
-jobfilter=st.selectbox('Choose a job',df['occupation'].unique(),index=3)
+jobfilter=st.selectbox('Choose a job',df['occupation'].unique(),index=1)
 st.write(jobfilter)
 placeholder=st.empty()
 df=df[df['occupation']==jobfilter]
